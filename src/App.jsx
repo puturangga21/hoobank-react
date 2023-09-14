@@ -1,4 +1,5 @@
-import { Analytics } from '@vercel/analytics/react';
+import { inject } from '@vercel/analytics';
+inject()
 import styles from "./style.js";
 import {
     Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonials
@@ -34,7 +35,7 @@ export default function App() {
                 </div>
             </div>
         </div>
-        <Analytics />
+  
         </>
        
     )
